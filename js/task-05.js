@@ -3,8 +3,6 @@ const refs = {
     nameOut: document.querySelector("#name-output"),
 };
 
-const typeField = newValue => {
-    return refs.nameOut.textContent = newValue.currentTarget.value.trim() || "незнакомец";
-};
+const typeField = newValue => refs.nameOut.textContent = newValue.currentTarget.value || 'незнакомец';
 
 refs.nameIn.addEventListener('input', typeField);

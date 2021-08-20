@@ -12,9 +12,11 @@ function decrement() {
     counterValue -= 1;
     counter.textContent = counterValue;
 };
+
 function increment() {
     counterValue += 1;
     counter.textContent = counterValue;
 };
+
 btnDecr.addEventListener('click', decrement);
 btnIncr.addEventListener('click', increment);

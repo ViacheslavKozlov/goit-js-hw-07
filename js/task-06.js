@@ -1,5 +1,5 @@
 const inputRef = document.querySelector('#validation-input');
-console.log(inputRef);
+// console.log(inputRef);
 
 function updInputColorStyle(addStyle, removeStyle) {
     inputRef.classList.add(addStyle);
@@ -13,4 +13,5 @@ function onInputValidate(event) {
     }
         updInputColorStyle('invalid', 'valid');
 };
+
 inputRef.addEventListener('blur', onInputValidate);
